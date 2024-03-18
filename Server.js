@@ -1,6 +1,6 @@
 const express = require('express');
 
-const app = use(express());
+const app = express();
 
 app.post('/',(req,res)=>{
     let data=req.body.data;
@@ -26,3 +26,5 @@ app.post('/',(req,res)=>{
         })
     }
 })
+
+app.listen(8080);
